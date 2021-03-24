@@ -15,3 +15,6 @@ Required hardware:
 
 ## Blank Front Panel  
 * This is simply a modified version of the front panel for those who do not wish to use a screen of any kind. You will use the original right front panel.  
+
+## BLV Matrix Printed Parts Aadapter  
+Printed parts adapter designed to use the Matrix Extruder with the printed parts
