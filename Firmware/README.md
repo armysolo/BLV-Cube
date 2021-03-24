@@ -30,49 +30,38 @@ https://duet3d.dozuki.com/
 https://forum.duet3d.com/  
 https://www.blvprojects.com/  
 
-# Notice for independent leveling:  
-### M671:  
+# Independent leveling:  
 You must use M671 to define the X and Y coordinates of the leadscrews.  
 M671 must come after the M584, M667 or M669.  
 Must specify the same quantity of X and Y coordinates as the number of motors assigned to the Z axis in M584  
 These coordinates must be in the same order as the driver numbers of the associated motors in M584. 
 Define it with the physical location in relation to the nozzle. The S parameter is for the max allowed adjustment.  
-
-**3 independent Z steppers**  
-  
-Ex `M671 X###:###:### Y###:###:### S##`  
-
-If you have 3 or 4 Z motors, in bed.g use at least one probe point close to each leadscrew.  
-
-### **2 Z motors**  
-one at each end of the X axis  
-set the Y coordinates of the leadscrews in M671 to be equal (the value doesn't matter, so you can use zero).  
-Use at least two probe points, one at each end of the X axis.  
-All your probe points should have the same Y coordinate, which should be at or near the middle of the printable range.  
-
-**Assigning the 2nd stepper**  
- > Define the driver in config.g `M584 Z0.3:0.4`  
-
- **Define physical leadscrew coordinates**  
-
-- They should be out of your printable range. Lead screw coordinates ignore ALL probe or nozzle offsets  
-1. A. Example:    
-* * `M671 X-48.5:360 Y150:150 S10`  
-The order the coordinates appear are important. The stepper located at -48.5,150 must be connected to driver 3  
-The stepper located at 360,150 must be connected to driver 4  
-
-### **bed.g**
 G30 defines where the head will probe to calculate the offset.  
-Define probe points with P#  
-The S parameter is the number of probe points(should match the number of independent steppers)  
-2x Independent steppers
-`G30 P0 X55 Y161 Z-99999 ; Probe near left lead screw position`  
-`G30 P1 X328 Y161 Z-99999 S2 ; Probe near right lead screw position`  
 
-3x Independent steppers
+**3 independent Z steppers with Kinematic Leveling**  
+Physical coordinates of the pivot points, NOT the lead screw. These will be out of your printable range `M671 X###:###:### Y###:###:### S##`  
+Define the driver in config.g `M584 Z0.3:0.4:0.5` 
+
+In bed.g  
 `G30 P0 X55 Y161 Z-99999 ; Probe near left lead screw position`  
 `G30 P1 X328 Y301 Z-99999 ; Probe near right rear lead screw position` 
 `G30 P1 X328 Y30 Z-99999 S3 ; Probe near right front lead screw position` 
+
+**2 Z motors**  
+One at each end of the X axis  
+Set the Y coordinates of the leadscrews in M671 to be equal (the value doesn't matter, so you can use zero).  
+Use at least two probe points, one at each end of the X axis.  
+All your probe points should have the same Y coordinate, which should be at or near the middle of the printable range.  
+
+Define the driver in config.g `M584 Z0.3:0.4`  
+`M671 X-48.5:360 Y150:150 S10`  
+The order the coordinates appear are important. The stepper located at -48.5,150 must be connected to driver 3  
+The stepper located at 360,150 must be connected to driver 4  
+
+In bed.g  
+`G30 P0 X55 Y161 Z-99999 ; Probe near left lead screw position`  
+`G30 P1 X328 Y161 Z-99999 S2 ; Probe near right lead screw position`  
+
 
 -Note: If you are experiencing the Z axis compensating in the opposite direction needed, that means your Z motors are swapped. 
 You can either swap the X values in the M671 command, or swap the stepper motors plugged into the Duet.
