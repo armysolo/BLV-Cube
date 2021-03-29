@@ -1,5 +1,12 @@
 # BLV-Cube  
- 
+# Notice for stepper wiring #  
+
+* Don't trust the data sheet or other schematics to be correct. You should test the wires yourself to find the coil pairs. Do not connect/disconnect the stepper motors while the board has power. You can blow stepper drivers. With the motor wires NOT connected to anything:  
+The idea is to find the two cables that form one of the two coils inside the stepper. If you short two wires together and the stepper shaft is hard to turn by hand you found one pair of wires for a coil.  
+Example- If black and green wires are a pair call them coil 1, than red and blue can be coil 2.  
+* Duet labels the Duet 2 Wifi stepper ports with 2B 2A(red-blue) and 1A 1B(green-black).  
+* Duet 3 is labeled B1 B2(black-green) and A1 A2(red-blue).
+
 ### 2020 LED Light Bar Mount  
 Required hardware:  
 * 2 M5x20mm flat head screws  
