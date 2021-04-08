@@ -27,4 +27,7 @@ Required hardware:
 * Printed parts adapter designed to use the Matrix Extruder with the printed parts  
 
 ## Firmware  
-* Firwmare for Duet 2 Wifi and Duet 3 for Rep Rap v3
+* Firwmare for Duet 2 Wifi and Duet 3 for Rep Rap v3  
+
+## 2020 Metal Kit Enclosure Spacer    
+* Simple spacer to allow an enclosure without heavy modification
