@@ -31,4 +31,5 @@ Required hardware:
 
 ## 2020 Metal Kit Enclosure Spacer    
 * Simple spacer to allow an enclosure without heavy modification  
-* used trunkstyle enclosure found here https://www.thingiverse.com/thing:4332736
+* used trunkstyle enclosure found here https://www.thingiverse.com/thing:4332736  
+* adds 4mm to height
