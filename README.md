@@ -30,4 +30,5 @@ Required hardware:
 * Firwmare for Duet 2 Wifi and Duet 3 for Rep Rap v3  
 
 ## 2020 Metal Kit Enclosure Spacer    
-* Simple spacer to allow an enclosure without heavy modification
+* Simple spacer to allow an enclosure without heavy modification  
+* used trunkstyle enclosure found here https://www.thingiverse.com/thing:4332736
