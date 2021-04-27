@@ -37,4 +37,5 @@ Required hardware:
 ## Miscellaneous Goodies
 Ed Palisoc(Nuramori on Thingiverse) has been a huge contributer to out community. Without his help I wouldn't have been able to finish my Triple Z setup. Here are links to his projects(more to come):  
 
-* [Triple Z Independent - Z Axis](https://www.dropbox.com/s/m6f4b08kxyxwha9/Triple%20Independent%20z-axis.zip?dl=0&fbclid=IwAR3-zyZDmTXMjZfZfhT3jl8l3lx3aWcgOTDhAud7R_mlzbvJy-eKy1hqbvg)
+* [Triple Z Independent - Z Axis](https://www.dropbox.com/s/m6f4b08kxyxwha9/Triple%20Independent%20z-axis.zip?dl=0&fbclid=IwAR3-zyZDmTXMjZfZfhT3jl8l3lx3aWcgOTDhAud7R_mlzbvJy-eKy1hqbvg)  
+* [Planetary Extruder ](https://github.com/Nuramori/Planetary-Extruder-for-the-BLV-Cube)
