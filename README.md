@@ -32,4 +32,9 @@ Required hardware:
 ## 2020 Metal Kit Enclosure Spacer    
 * Simple spacer to allow an enclosure without heavy modification  
 * used trunkstyle enclosure found here https://www.thingiverse.com/thing:4332736  
-* adds 4mm to height
+* adds 4mm to height  
+
+## Miscellaneous Goodies
+Ed Palisoc(Nuramori on Thingiverse) has been a huge contributer to out community. Without his help I wouldn't have been able to finish my Triple Z setup. Here are links to his projects(more to come):  
+
+* [Triple Z Independent - Z Axis](https://www.dropbox.com/s/m6f4b08kxyxwha9/Triple%20Independent%20z-axis.zip?dl=0&fbclid=IwAR3-zyZDmTXMjZfZfhT3jl8l3lx3aWcgOTDhAud7R_mlzbvJy-eKy1hqbvg)
