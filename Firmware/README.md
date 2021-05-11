@@ -30,6 +30,41 @@ https://duet3d.dozuki.com/
 https://forum.duet3d.com/  
 https://www.blvprojects.com/  
 
+
+
+## Endstop Locations  
+Configs have the X Endstop on the left of the carriage(homing to min) and the Y endstop at the back(homing to max).  
+M574 X1 S1 P"io1.in"  
+M574 Y2 S1 P"io2.in"  
+X1 = Home to min  
+Y2 = Home to max  
+S1 = Microswith endstop  
+
+If homing isn't working correctly:  
+1. Make sure your motors move in the correct direction.  
+A. Jog X. - will move left, + will move right.  
+B. Jog Y. - will move towards the front, + will move back.  
+Stepper wire colors are not universal. If they're moving the opposite direction change the S parameter in M569 P# S#. If you're not sure which one to change, check the drive mapping in M584.  
+`M584 X0.1 Y0.2`  
+Changing `M569 P0.1 S0` to `M569 P0.1 S1` will invert the direction of X because it's assigned to driver 0.1.  
+
+2. If you get an error that says "failed to trigger endstop during homing" your homing files might be incorrect. 
+homex.g example:  
+`G91               ; relative positioning`  
+`G1 H2 Z5 F1000     ; lift Z relative to current position`  
+`G1 H1 X-355 F6000 ; move quickly to X axis endstop and stop there (first pass)`  
+`G1 X5 F6000       ; go back a few mm`  
+`G1 H1 X-355 F360  ; move slowly to X axis endstop once more (second pass)`  
+`G1 H2 Z-5 F1000      ; lower Z again`  
+`G90               ; absolute positioning`  
+
+If you need to home X to max change these 3 lines in homex.g and the corresponding ones in homeall.g  
+`G1 H1 X355 F6000 ; move quickly to X axis endstop and stop there (first pass)`  
+`G1 X-5 F6000       ; go back a few mm`  
+`G1 H1 X355 F360  ; move slowly to X axis endstop once more (second pass)`  
+And change the switch location in config.g  
+`M574 X2 S1 P"io1.in"`
+
 # Independent leveling:  
 You must use M671 to define the X and Y coordinates of the leadscrews.  
 M671 must come after the M584, M667 or M669.  
