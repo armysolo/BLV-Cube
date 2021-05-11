@@ -44,7 +44,7 @@ M208 X0 Y1 Z0 S1                                   ; set axis minima
 M208 X330 Y319 Z445 S0                             ; set axis maxima
 
 ; Endstops
-M574 X2 S1 P"io1.in"                              ; configure active-high endstop for high end on X via pin i01.in
+M574 X1 S1 P"io1.in"                              ; configure active-high endstop for low end on X via pin i01.in
 M574 Y2 S1 P"io2.in"                              ; configure active-high endstop for high end on Y via pin i02.in
 M574 Z1 S2                                         ; configure Z-probe endstop for low end on Z
 M591 D0 P1 C"io3.in" S1							  ; configure filament runout sensor for high end on extruder drive 0 via pin i03.in
