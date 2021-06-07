@@ -34,7 +34,7 @@ Required hardware:
 * used trunkstyle enclosure found here https://www.thingiverse.com/thing:4332736  
 * adds 4mm to height  
 
-## Metal Kit LED Mount  
+## Metal Kit Orbiter v1.5 Mount  
 Addon mount for Orbiter v1.5 with optional cable chain mount  
 Cable chain hole spacing is 10mm  
 Required hardware:  
