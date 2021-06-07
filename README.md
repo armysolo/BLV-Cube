@@ -36,7 +36,7 @@ Required hardware:
 
 ## Metal Kit LED Mount  
 Addon mount for Orbiter v1.5 with optional cable chain mount  
-Cable chain hole spacing is 10mm
+Cable chain hole spacing is 10mm  
 Required hardware:  
 * 4x M3x10mm Countersunk Socket Head screws-Mounts adapter to top of X carriage  
 * 2x M3x16mm Button Head screws-Mounts Orbiter v1.5 and Block Shield to adapter plate  
