@@ -34,6 +34,14 @@ Required hardware:
 * used trunkstyle enclosure found here https://www.thingiverse.com/thing:4332736  
 * adds 4mm to height  
 
+## Metal Kit Orbiter v1.5 Mount  
+Addon mount for Orbiter v1.5 with optional cable chain mount  
+Cable chain hole spacing is 10mm  
+Required hardware:  
+* 4x M3x10mm Countersunk Socket Head screws-Mounts adapter to top of X carriage  
+* 2x M3x16mm Button Head screws-Mounts Orbiter v1.5 and Block Shield to adapter plate  
+* 4x M3 nuts-2 are for optional cable chain mount
+
 ## Miscellaneous Goodies
 Ed Palisoc(Nuramori on Thingiverse) has been a huge contributer to out community. Without his help I wouldn't have been able to finish my Triple Z setup. He's been kind enough to share his designs. Here are links to his projects(more to come):  
 
