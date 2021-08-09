@@ -1,0 +1,22 @@
+; Purge nozzle called at in the starting script of the slicer profile M98 P"/macros/Purge"
+; M82 With absolute extrusion, the E value is relative to when the extruder was last zeroed.
+; M83 With relative extrusion, the E value will be relative to the last move end position. 
+M291 P"Purge Started !" R"Purging.." S1 T2 	; display msg
+M593 P"daa" F21								; Enable dynamic acceleration at 21hz
+M83											; use relative extrusion
+G92 E0										; Set extruder position to 0
+M566 X700.00 Y700.00 Z24.00 E1000.00        ; set maximum instantaneous speed changes (mm/min)
+M203 X12000.00 Y12000.00 Z800.00 E4000.00   ; set maximum speeds (mm/min)
+M201 X3000.00 Y3000.00 Z100.00 E1500.00     ; set accelerations (mm/s^2)
+G1 Z10 F3000 								; move z up little to prevent scratching of surface
+G1 X5 Y70 Z0.3 F5000.0						; move to start-line position
+G1 Z0.3 F1000 								; print height
+G1 X5 Y220 F1500.0 E15 						; draw 1st line
+G1 X5.3 Y220 Z0.3 F5000.0					; move to side a little
+G1 X5.3 Y70 Z0.3 F1500.0 E15 				; draw 2nd line
+G1 E-1 F3000								; Retract 1mm filament
+G92 E0										; Set extruder position to 0
+M291 P"Purge Finished !" R"Finished.." S1 T2 ; display msg
+G1 Z3 F3000 								; move z up little to prevent scratching of surface
+G1 X150 Y150 F6000 							; move to center of the bed
+M572 D0 S0.20								; Enable pressure advance for drive 0

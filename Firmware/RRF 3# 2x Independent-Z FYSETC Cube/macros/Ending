@@ -1,0 +1,11 @@
+; Called from "ending script" of the slicer profile M98 P"/macros/Ending" 
+M104 S0 ; turn off extruder
+M140 S0 ; turn off bed
+M106 S0 ; turn off part cooling fan
+G91
+G1 Z10 F3000
+G90
+G1 X-42 Y300 F5000 ; prepare for part removal
+;M84 ; Uncomment to disable motors, I recommend against because it can cause the bed to drop
+M291 P"Printing finished !" R"Printing.." S1 T3
+;M81 S1 ; Uncomment to shutdown after all thermostatic fans have turned off

@@ -1,0 +1,10 @@
+; Macro used to probe next to lead screw and calculate the offset
+; G30 positions are effected by BLTouch offset 42.45mm offset (G31 X-42.45 Y0) in config.g
+; Physical nozzle position X39 Y143.2 = G30 position X-3.45 Y143.2 (X=39.00-42.45 & Y=143.2-0)
+; Physical nozzle position X317 Y143.2 = G30 position X274.55 Y143.2 (X=317-42.45 & Y=143.2-0)
+G90 				; absolute positioning bb
+G1 Z10 H0 F2000				; Making sure we're not going to hit the side of glass
+G28				; home all axis bb
+G30 P0 X0 Y143.2 F300 Z-99999			; Probe near left lead screw position -22, 163
+G30 P1 X274.55 Y143.2 F3000 Z-99999 S2		; Probe near right rear lead screw position 342, 290.5
+;G28 Z0
