@@ -12,8 +12,8 @@ M669 K1														; Select CoreXY mode
 
 ; ====================== Network ===========================
 M552 S1                                                 	; enable network
-;M552 P192.168.1.50											; set IP Address
-;M587 P"Cowabunga" S"Sexywife16" I192.168.1.50				; Connect WiFi and set IP address
+;M552 P###.###.####.###										; set IP Address
+;M587 P"SSID" S"PASSWORD"									; Connect WiFi and set IP address
 ;M586 P0 S1                                              	; enable HTTP
 ;M586 P1 S0                                              	; disable FTP
 ;M586 P2 S0                                              	; disable Telnet
@@ -36,7 +36,7 @@ M906 X1600 Y1600 Z1600 E1000 I30                     	    ; set motor currents (
 M84 S120	                               	                ; Set idle timeout
 
 ; ================ Independent Z Leveleing =================
-M671 X-75.25:354.25 Y143.2:143.2 S10			   			   	; leadscrew pivot point:
+M671 X-75.25:354.25 Y143.2:143.2 S10			   			; leadscrew pivot point:
 
 ; ===================== Axis Limits ========================
 M208 X-35.5 Y0 Z0 S1                                      	; set axis min
@@ -55,13 +55,13 @@ G31 P500 X-42.45 Y0 Z1.370                                  ; set Z probe trigge
 
 ; ======================== Heaters =========================
 M308 S0 P"bedtemp" Y"thermistor" A"Bed" T100000 B3950 		; configure sensor 0 as thermistor on pin bedtemp
-M950 H0 Q10 C"bedheat" T0                                   ; create bed heater output on bedheat and map it to sensor 0
-M307 H0 B0 R0.450 C615.4 D2.65 S1.00 V24.1					; Heatbed PID
+M950 H0 C"bedheat" T0                                   	; create bed heater output on bedheat and map it to sensor 0
+M307 H0 B0 S1							`					; Heatbed PID
 M140 H0                                                 	; map heated bed to heater 0
 M143 H0 S120                                            	; set temperature limit for heater 0 to 120C
 M308 S1 P"e0temp" Y"thermistor" A"Hotend" T100000 B4725 C0.06e-8  ; configure sensor 1 as thermistor on pin e0temp
 M950 H1 C"e0heat" T1                                    	; create nozzle heater output on e0heat and map it to sensor 1
-M307 H1 B0 R2.461 C155.7 D10.12 S0.90 V24.1					; Hotend PID .4mm
+M307 H1 B0 S1												; Hotend PID .4mm
 M143 H1 S260												; set temperature limit for heater 0 to 260C
 M308 S2 P"mcu-temp" Y"mcu-temp" A"Duet Board" 				; Configure MCU sensor
 
@@ -84,24 +84,23 @@ M575 P1 S1 B57600                                       	; enable support for Pa
 M911 S10 R11 P"M913 X0 Y0 G91 M83 G1 Z3 E-5 F1000" 			; set voltage thresholds and actions to run on power loss
 
 ;Duet 2 pinout-*=inverted
-;bedheat * Bedheater
-;e0heat * Hotend
-;e1heat * NC
-;exp.heater3 BLTouch S
+;bedheat * 		Bedheater
+;e0heat * 		Hotend
+;e1heat * 		NC
+;exp.heater3 	BLTouch S
 ;Duet 2 temperature inputs
-;bedtemp Bed thermistor
-;e0temp HE thermistor
-;e1temp NC
+;bedtemp 		Bed thermistor
+;e0temp 		HE thermistor
+;e1temp 		NC
 ;Duet 2 fan outputs
-;fan0 MB Fan GND
-;fan1 LY Fan GND
-;fan2 HE Fan GND
+;fan0 			MB Fan GND
+;fan1 			LY Fan GND
+;fan2 			HE Fan GND
 ;Endstop inputs
-;xstop X Endstop C
-;ystop Y Endstop C
-;zstop NC
-;e0stop Filament runout sensor C
-;e1stop Off button C pin
-;zprobe.in Z-
-;zprobe.mod NC
-
+;xstop 			X Endstop C
+;ystop 			Y Endstop C
+;zstop 			NC
+;e0stop 		Filament runout sensor C
+;e1stop 		NC
+;zprobe.in 		Z-
+;zprobe.mod 	NC
