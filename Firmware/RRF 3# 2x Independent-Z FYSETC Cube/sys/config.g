@@ -13,7 +13,7 @@ M669 K1														; Select CoreXY mode
 ; ====================== Network ===========================
 M552 S1                                                 	; enable network
 ;M552 P192.168.1.50											; set IP Address
-;M587 P"Cowabunga" S"Sexywife16" I192.168.1.50				; Connect WiFi and set IP address
+;M587 P"" S"" I192.168.1.50				; Connect WiFi and set IP address
 ;M586 P0 S1                                              	; enable HTTP
 ;M586 P1 S0                                              	; disable FTP
 ;M586 P2 S0                                              	; disable Telnet
