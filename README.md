@@ -40,7 +40,16 @@ Cable chain hole spacing is 10mm
 Required hardware:  
 * 4x M3x10mm Countersunk Socket Head screws-Mounts adapter to top of X carriage  
 * 2x M3x16mm Button Head screws-Mounts Orbiter v1.5 and Block Shield to adapter plate  
-* 4x M3 nuts-2 are for optional cable chain mount
+* 4x M3 nuts-2 are for optional cable chain mount  
+
+## Metal Kit Orbiter v1.5 Mosquito Mount    
+This mount is untested. It was created based on Slice Engineering's CAD model.  
+* 4x M3x20  
+* 8x M3 nuts  
+* 2x M3x10  
+* 2x M3x18  
+* 4x M3x10 countersunk screw  
+* 6x M2.5x6  
 
 ## Miscellaneous Goodies
 Ed Palisoc(Nuramori on Thingiverse) has been a huge contributer to out community. Without his help I wouldn't have been able to finish my Triple Z setup. He's been kind enough to share his designs. Here are links to his projects(more to come):  
