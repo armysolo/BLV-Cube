@@ -1,0 +1,17 @@
+; bed.g
+; called to perform automatic bed compensation via G32
+M561               		; clear any bed transform
+G90 				; absolute positioning bb
+G1 Z10 H0 F2000				; Making sure we're not going to hit the side of glass
+G28				; home all axis bb
+M557 X20:280 Y45:290 P4
+G30 P0 X0 Y163.2 F300 Z-99999				; Probe near left lead screw position -22, 163
+G30 P1 X325 Y34.7 F3000 Z-99999				; Probe near right front lead screw position 342, 290.5 X325 Y34.7
+G30 P2 X325 Y289.7 F6000 Z-99999 S3			; Probe near right rear lead screw position 342, 35.5  X325 Y289.7
+;G30 P0 X0 Y161 F300 Z-99999				; Probe near left lead screw position -20, 176.2
+;G30 P1 X325 Y288.5 F3000 Z-99999			;Probe near right rear lead screw position 344,303.7
+;G30 P2 X325 Y33.5 F6000 Z-99999 S3 		;Probe near right front lead screw position 344,48.7
+;M671 X-20:344:344 Y176.2:303.7:48.7
+;G31 P500 X0 Y-19.2
+;G28 Z0
+;G29

@@ -1,0 +1,6 @@
+M291 P"Homing all axis" R"Printing.." S1 T2
+M572 D0 S0.040								; PA setting
+M593 P"daa" F21								; Enable dynamic acceleration at 21hz
+G32											; Run mesh grid compenstion
+G92 E0 F100									; reset extruder
+G1 Z5 F3000 								; move z up little to prevent scratching of surface

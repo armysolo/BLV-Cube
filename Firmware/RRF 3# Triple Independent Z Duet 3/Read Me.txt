@@ -1,8 +1,9 @@
 My printer has 3 independant Z steppers. You need to set the physical location of the pivot point not the lead screws with
-M671 X-36:345:346 Y157:301:17 S10 ; set drive mapping: Z3=Left Front, Z4= Right Rear, Z5=Right Front
+M671 X-20:344:344 Y162.2:48.7:303.7 S10 ; set drive mapping: Z3=Left Front, Z4= Right Front, Z5=Right Rear
+
 You need to keep the same order of M671 as the drive assignent in M584
 M584 Z0.3:0.4:0.5
 
-Set your probe boundaries. My BLtouch is on the left of my hotend. M557 will be effected by M208
+Set your probe boundaries. My BLTouch is in front of my hotend. M557 will be effected by M208
 
-M557 X65:328 Y21:291 P4
+M557 X20:280 Y45:290 P4
