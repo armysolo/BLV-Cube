@@ -30,12 +30,24 @@ https://duet3d.dozuki.com/
 https://forum.duet3d.com/  
 https://www.blvprojects.com/  
 
+## Bed Probe Configuration  
+For a BLTouch-  
+1. In config.g you need to define 3 things:  
+`M950 S0 C"exp.heater3"                                   	; create servo/PWM channel and assign to exp.heater3 pin`  
+`M558 P9 C"^zprobe.in" H5 F300 T9000                     	; P9 = BLTOUCH, C PWM pin, H# = dive height, F = dive speed, T = travel speed`  
+`G31 P500 X-42.45 Y0 Z1.370                                ; P = Z probe trigger value, XY = offset from nozzle, Z = trigger height`  
+
+2. You need 2 files:  
+A. deployprobe.g  
+  `M280 P0 S10				; P = servo/PWM channel defined in config.g`  
+B. retractprobe.g  
+  `M280 P0 S90 I1				; P = servo/PWM channel defined in config.g`  
 
 
 ## Endstop Locations  
 Configs have the X Endstop on the left of the carriage(homing to min) and the Y endstop at the back(homing to max).  
-M574 X1 S1 P"io1.in"  
-M574 Y2 S1 P"io2.in"  
+`M574 X1 S1 P"io1.in"  
+M574 Y2 S1 P"io2.in"`  
 X1 = Home to min  
 Y2 = Home to max  
 S1 = Microswith endstop  
