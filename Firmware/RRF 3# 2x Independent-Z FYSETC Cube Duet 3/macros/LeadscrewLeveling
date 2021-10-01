@@ -5,6 +5,6 @@
 G90 				; absolute positioning bb
 G1 Z10 H0 F2000				; Making sure we're not going to hit the side of glass
 G28				; home all axis bb
-G30 P0 X0 Y143.2 F300 Z-99999			; Probe near left lead screw position -22, 163
-G30 P1 X274.55 Y143.2 F3000 Z-99999 S2		; Probe near right rear lead screw position 342, 290.5
+G30 P0 X0 Y155.2 F300 Z-99999			; Probe near left lead screw position -22, 163
+G30 P1 X274.55 Y155.2 F3000 Z-99999 S2		; Probe near right rear lead screw position 342, 290.5
 ;G28 Z0

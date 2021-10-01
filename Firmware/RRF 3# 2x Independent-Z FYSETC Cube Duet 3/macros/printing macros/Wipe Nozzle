@@ -1,0 +1,9 @@
+; Called in the starting script of the slicer profile M98 P"/macros/Wipe Nozzle"
+G1 X-35 Y260 F8000
+G1 Y275 F8000
+G1 Y338 F8000
+G1 Y275 F8000
+G1 Y338 F8000
+G1 Y275 F8000
+G1 Y338 F8000
+G1 Y260 F8000

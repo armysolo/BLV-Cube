@@ -1,3 +1,4 @@
+; This macro repeats LeadscrewLeveling multiple times. Can help determine probe reliability and diagnose probing issues
 G28
 G30 P0 X0 Y143.2 F300 Z-99999			; Probe near left lead screw position -22, 163
 G30 P1 X274.55 Y143.2 F3000 Z-99999 S2		; Probe near right rear lead screw position 342, 290.5
