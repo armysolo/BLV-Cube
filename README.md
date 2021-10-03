@@ -69,6 +69,18 @@ Required Hardware:
 * 2x M3x6
 * 2x M3 nuts  
 
+## Rear Cover  
+This is an aesthetics mod. You would need to remove the rear air scrubbers. I've uploaded 2 versions:  
+Rear Cover-Split into 2 files.  
+Required Hardware:  
+* 8x M3x8 countersunk screw  
+* 8x M3 T-nuts  
+
+Rear Cover w Webcam Cutout-Has a cutout in the middle for a webcam and is split into 3 files for make printing easier.  
+Required Hardware:  
+* 10x M3x8 countersunk screw  
+* 10x M3 T-nuts  
+
 ## Miscellaneous Goodies
 Ed Palisoc(Nuramori on Thingiverse) has been a huge contributer to out community. Without his help I wouldn't have been able to finish my Triple Z setup. He's been kind enough to share his designs. Here are links to his projects(more to come):  
 
