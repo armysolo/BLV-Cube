@@ -90,3 +90,7 @@ Ed Palisoc(Nuramori on Thingiverse) has been a huge contributer to out community
 * [Triple Z Independent - Z Axis](https://github.com/Nuramori/Independent-triple-Z)  
 ** This is one of the original designs for the BLV Cube.
 * [Planetary Extruder ](https://github.com/Nuramori/Planetary-Extruder-for-the-BLV-Cube)
+
+
+##  
+Feel free to [donate[(https://www.paypal.com/paypalme/DHusoloBLV)
