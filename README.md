@@ -9,10 +9,10 @@ Example- If black and green wires are a pair call them coil 1, than red and blue
 
 ### 2020 LED Light Bar Mount  
 Required hardware:  
-* 2 M5x20mm flat head screws  
-* 2 M5 nuts  
-* 2 M5x8mm/M5x10mm screws  
-* 2 M5 T-Nuts  
+* 2x M5x20mm flat head screws  
+* 2x M5 nuts  
+* 2x M5x8mm/M5x10mm screws  
+* 2x M5 T-Nuts  
 
 ## Metal Kit LED Mount
 Not compatible with IR sensor  
@@ -66,8 +66,9 @@ Simple mount to secure the cable chain to 2020/2040.
 Required Hardware:  
 * 2x M5x10
 * 2x M5 T-Nuts
-* 2x M3x6
+* 2x M3x6 flat head screws
 * 2x M3 nuts  
+* 4x M3x8 flat head screws
 
 ## Rear Cover  
 This is an aesthetics mod. You would need to remove the rear air scrubbers. I've uploaded 2 versions:  
@@ -90,3 +91,7 @@ Ed Palisoc(Nuramori on Thingiverse) has been a huge contributer to out community
 * [Triple Z Independent - Z Axis](https://github.com/Nuramori/Independent-triple-Z)  
 ** This is one of the original designs for the BLV Cube.
 * [Planetary Extruder ](https://github.com/Nuramori/Planetary-Extruder-for-the-BLV-Cube)
+
+
+##  
+Feel free to [donate](https://www.paypal.com/paypalme/DHusoloBLV)
