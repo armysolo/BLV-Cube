@@ -93,4 +93,4 @@ Ed Palisoc(Nuramori on Thingiverse) has been a huge contributer to out community
 
 
 ##  
-Feel free to [donate[(https://www.paypal.com/paypalme/DHusoloBLV)
+Feel free to [donate](https://www.paypal.com/paypalme/DHusoloBLV)
