@@ -1,0 +1,15 @@
+#Systemd service file for moonraker
+
+[Unit]
+Description=Starts Monitor on startup
+
+[Service]
+Type=forking
+User=root
+StandardOutput=append:/var/log/monitor.log
+RemainAfterExit=yes
+ExecStart=python /home/pi/neopixels/monitoring.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
