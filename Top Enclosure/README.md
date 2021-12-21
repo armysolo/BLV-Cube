@@ -1,5 +1,10 @@
 ## BOM-Work In Progress  
 
+~.250"/6mm Plexiglass:  
+1x 534 x 161mm  
+1x 534 x 517mm  
+
+Hardware:  
 4x 150mm 2020 extrusion  
 2x 496mm 2020 extrusion  
 1x 536mm 2020 extrusion  
