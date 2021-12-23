@@ -1,8 +1,15 @@
+* Note-This version is for the metal kit.  
+
 ## BOM-Work In Progress  
 
 ~.250"/6mm Plexiglass:  
-1x 534 x 161mm  
-1x 534 x 517mm  
+1x 534 x 161mm - Front  
+1x 534 x 517mm - Top  
+2x 157 x 536mm - Sides  
+1x 178 x 576mm - Rear 
+
+~.125"/3mm Plexiglass:  
+2x 428 x 246mm - Doors
 
 Hardware:  
 4x 150mm 2020 extrusion  
@@ -13,7 +20,12 @@ Hardware:
 4x M5x12mm button head screws  
 6x M5x16mm button head screws  
 2x M5x10 flat countersunk screws  
+30x M3x8 button head screws  
+30x M3 T-Nuts  
 12x M5 T-Nuts  
+16x M4x10 flat countersunk screws  
+8x M4 T-Nuts  
+8x M4 Nuts
 
 2x [10 Inch 50N/11lb Gas Spring Strut](https://www.amazon.com/gp/product/B01LAY5WT8/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)  
 4x [10MM Ball Stud Bracket for Gas Spring Strut](https://www.amazon.com/gp/product/B07ZG64D12/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)  
