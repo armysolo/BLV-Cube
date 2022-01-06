@@ -49,3 +49,11 @@ Hardware:
 
 
 [Headlight Taillight Tint Vinyl Wrap](https://www.amazon.com/gp/product/B083L6R3ZQ/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)  
+
+The hardest part was cutting and drilling the plexiglass. I had a local hardware store cut the plexiglass to size. I used my variable speed scroll saw and some 3 in 1 oil to make the cutouts(for hinges or belt tensioner). I used a metal straight edge and an X-Acto knife to score the cuts. Make sure you score the cut line a few times. You don't have to score the plexiglass but I found that scoring basically gives a channel for the oil to sit in and helps guide the blade while you cut. Cut slowly to prevent the plexiglass from getting too hot otherwise it can melt. 
+
+I used a cordless drill for all the holes. When drilling holes in plexiglass make sure you have a piece of wood under the plexiglass to help prevent breakage. It's also wise to drill the holes a bit larger than needed. All holes were drilled 1-2mm over
+
+I would suggest building the 2020 top frame first. Make sure it's square. Mount the 3 torque position hinges, outside ones are 70mm from each corner and the middle one is in the center of the extrusion(247mm). Print 7x Top Plexiglass Placement Jigs. They mount to the inside of the 2020 frame. The purpose of these jigs is for you to place the top plexiglass on to make assembly easier. Set the top plexiglass on the jigs so you can mark the cutouts for the hinges. Make sure it's centered.  
+
+After you make the cutouts for the hinges place the plexiglass back on the jigs. Place the 3x Top Rear Hinge printed parts on the plexiglass. Use 2x M4 screws in the 2 middle holes going through the torque position hinges. Mark the 2 outside holes of each hinge so you know where to drill.
