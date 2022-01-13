@@ -66,10 +66,10 @@ M143 H1 S260												; set temperature limit for heater 0 to 260C
 M308 S2 P"mcu-temp" Y"mcu-temp" A"Duet Board" 				; Configure MCU sensor
 
 ; ========================= Fans ===========================
-M950 F0 C"fan2" Q500                                    	; create fan 1 on pin fan1 and set its frequency
-M106 P0 C"Layer fan" S0 H-1                             	; set fan 1 value. Thermostatic control is turned off
-M950 F1 C"fan1" Q500                                    	; create fan 2 on pin fan2 and set its frequency
-M106 P1 C"HE Fan" S1 H1 T40                             	; set fan 2 value. Thermostatic control is turned off
+M950 F0 C"fan0" Q500                                    	; create fan 0 on pin fan1 and set its frequency
+M106 P0 C"Layer fan" S0 H-1                             	; set fan 0 value. Thermostatic control is turned off
+M950 F1 C"fan1" Q500                                    	; create fan 1 on pin fan2 and set its frequency
+M106 P1 C"HE Fan" S1 H1 T40                             	; set fan 1 value. Thermostatic control is turned off
 
 ; ======================== Tools ===========================
 M563 P0 D0 H1 F0                                   			; define tool 0
@@ -93,9 +93,9 @@ M911 S10 R11 P"M913 X0 Y0 G91 M83 G1 Z3 E-5 F1000" 			; set voltage thresholds a
 ;e0temp 		HE thermistor
 ;e1temp 		NC
 ;Duet 2 fan outputs
-;fan0 			MB Fan GND
-;fan1 			LY Fan GND
-;fan2 			HE Fan GND
+;fan0 			LY Fan GND
+;fan1 			HE Fan GND
+;fan2 			MB Fan GND
 ;Endstop inputs
 ;xstop 			X Endstop C
 ;ystop 			Y Endstop C
