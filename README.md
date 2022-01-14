@@ -83,7 +83,14 @@ Required Hardware:
 * 10x M3 T-nuts  
 
 ## Rear Stepper Timing Gear Jig  
-A jig I made to aid in timing geat placement. The spacing is 1.75mm
+A jig I made to aid in timing geat placement. The spacing is 1.75mm  
+
+
+## Metal Kit X Carriage Top Plate Wire Loom Holder    
+Top mount holder for the wire loom.    
+Required hardware to mount to the X Carriage top:  
+* 4x M3x8 or M3x10 countersunk screws  
+* 1x zip tie to hold the wire loom into the printed part    
 
 ## Miscellaneous Goodies
 Ed Palisoc(Nuramori on Thingiverse) has been a huge contributer to out community. Without his help I wouldn't have been able to finish my Triple Z setup. He's been kind enough to share his designs. Here are links to his projects(more to come):  
