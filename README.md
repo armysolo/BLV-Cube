@@ -52,6 +52,14 @@ Required Hardware:
 * 4x M3x10 countersunk screw  
 * 6x M2.5x6  
 
+## Metal Kit Orbiter v1.5 Mount  
+Addon mount for Orbiter v2.0 with optional cable chain mount  
+Cable chain hole spacing is 10mm  
+Required hardware:  
+* 4x M3x10mm Countersunk Socket Head screws-Mounts adapter to top of X carriage  
+* 2x M3x16mm Button Head screws-Mounts Orbiter v1.5 and Block Shield to adapter plate  
+* 6x M3 nuts-2 are for optional cable chain mount  
+
 ## Metal Kit Duet Tool Board v1.1 Mount    
 Metal kit mount for the Duet Tool Board v1.1. If you have a BLTouch mounted on the rear of the X Carriage, you will need to move it to the front. You can find the one I designed [here](https://github.com/armysolo/BLV-Cube/blob/main/FYSETC%20Modified%20Printed%20Parts/BLTouch%20Front%20Mount%20Adapter.STL)  
 Required hardware to mount to the X Carriage Rear:  
