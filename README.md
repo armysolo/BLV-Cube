@@ -100,6 +100,17 @@ Required hardware to mount to the X Carriage top:
 * 4x M3x8 or M3x10 countersunk screws  
 * 1x zip tie to hold the wire loom into the printed part    
 
+## Metal Kit Metal Kit ADXL345 Rear Plate Mount  
+Mounts an ADXL345 Accelerometer to the rear of the X carriage. 2 versions have been uploaded:  
+* Option 1: Uses heat set inserts to mount the accelerometer to the mount.  
+** 2x M2.5*3*3.5 Heat Set Inserts  
+** 3x M3x8 flat head screws  
+** 2x M2.5x6mm socket head screws  
+
+* Option 2: No heat set inserts. Thread the 2.5mm screws into the printed part.    
+** 3x M3x8 flat head screws  
+** 2x M2.5x6mm socket head screws  
+
 ## Miscellaneous Goodies
 Ed Palisoc(Nuramori on Thingiverse) has been a huge contributer to out community. Without his help I wouldn't have been able to finish my Triple Z setup. He's been kind enough to share his designs. Here are links to his projects(more to come):  
 
