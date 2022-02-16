@@ -103,7 +103,7 @@ Required hardware to mount to the X Carriage top:
 ## Metal Kit Metal Kit ADXL345 Rear Plate Mount  
 Mounts an ADXL345 Accelerometer to the rear of the X carriage. 2 versions have been uploaded:  
 * Option 1: Uses heat set inserts to mount the accelerometer to the mount.  
-** 2x M2.5*3*3.5 Heat Set Inserts  
+** 2x M2.5 x 3 x 3.5 Heat Set Inserts  
 ** 3x M3x8 flat head screws  
 ** 2x M2.5x6mm socket head screws  
 
