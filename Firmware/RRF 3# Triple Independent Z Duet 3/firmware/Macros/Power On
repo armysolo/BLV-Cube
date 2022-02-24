@@ -1,0 +1,15 @@
+; Macro file created for on/off button
+; in config.g:
+; M950 J1 C"!0.io4.in"			; Create GPIO pin for On button wired NO-must be inverted with !
+; M581 T2 P1 S1 R0		        ; T2-Run Trigger 2; P1-J1; S1-When button pressed; R0-trigger any time
+; Quick press = power on
+; long press = power off
+
+M80								; Power on
+G4 P200							; wait 2ms
+M98 P"config.g"					; run config.g to re-recognize toolboard
+G4 P200							; wait 2ms
+if sensors.gpIn[1].value = 1 	; check if button still pressed
+	M291 P"Power off" S1 T2 	;
+	G4 S1						; give time to let go of the button to prevent accidental power on
+    M81 						; turn off power
