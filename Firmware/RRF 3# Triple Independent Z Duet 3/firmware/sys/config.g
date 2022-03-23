@@ -8,7 +8,10 @@
 ; many features such as pressure advance and input shaping are now called in the starting print macros
 ; 
 ; ================= General preferences ===================
+; ======================= RRF3.3 ==========================
 M80															; Turns on the ATX power supply
+; ======================= RRF3.4 ==========================
+;M80 C"pson"												; Turns on the ATX power supply
 G4 S1														; Wait for tool board
 G90                                                			; send absolute coordinates...
 M83                                                			; ...but relative extruder moves
