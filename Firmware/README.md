@@ -4,8 +4,8 @@ I will only update my configuration files for the latest released versions. I wo
 Make sure your M208 in config.g is configured correctly for max and min.  
 
 Firmware versions:  
-Duet 2 Wifi RRF 3.2  
-Cube Duet 3 RRF 3.2  
+Duet 2 Wifi RRF 3.4  
+Cube Duet 3 RRF 3.4  
 
 If upgrading from Duet RRF2 you need to update to RRF3.0.0 before going to the latest released version. After updating to RRF3.0.0 you can go to RRF3.#.#.  
 
@@ -16,6 +16,9 @@ There are a number of changes in RRF3 which makes some of the RRF2 Gcode incompa
 https://duet3d.dozuki.com/Wiki/RepRapFirmware_3_overview#Section_Summary_of_what_you_need_to_do_to_convert_your_configuration_and_other_files  
 
 Become familiar with the firmware. Learn to troubleshoot and use the Duet resources. You'll learn more if figure it out on your own vs always asking someone to fix it for you. Make sure you're using the latest version of the firmware.  
+
+I've personally spent hundreds of hours writing instructions and how to guides for the FYSETC kit. Even if you don't have a FYSETC kit these guides can still be extremely beneficial.  
+https://www.ifixit.com/Device/BLV_MGN_Cube  
 
 After your build is assembled and firmware configured, DO THE COMMISSION TESTING!!!! I can't stress that enough. It can prevent damage to the printer or the main board.  
 
@@ -29,6 +32,11 @@ https://duet3d.dozuki.com/Wiki/Bed_levelling_using_multiple_independent_Z_motors
 https://duet3d.dozuki.com/  
 https://forum.duet3d.com/  
 https://www.blvprojects.com/  
+
+## RRF3.4 Update  
+If updating to RRF3.4 you will need to modify your M80 config.  
+Pre RRF3.4 `M80`  
+RRF3.4 `M80 C"pson"`  
 
 ## Bed Probe Configuration  
 For a BLTouch-  
