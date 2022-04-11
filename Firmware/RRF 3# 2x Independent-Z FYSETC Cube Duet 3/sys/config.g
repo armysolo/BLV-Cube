@@ -15,12 +15,13 @@
 ; I have starting script macros for PLA+, PLA, PETG, SILK, TPU, etc. With pressure advance you need to calibrate it for each type of filament.
 
 ; ================= General preferences ===================
-; ======================= RRF3.3 ==========================
-M80															; Turns on the ATX power supply
-; ======================= RRF3.4 ==========================
-;M80 C"pson"												; Turns on the ATX power supply
-G4 S1														; Wait for tool board
 M669 K1														; Select CoreXY mode
+G4 S1														  ; Wait for tool board
+
+; ======================= RRF3.3 ==========================
+;M80														  ; Turns on the ATX power supply
+; ======================= RRF3.4 ==========================
+M80 C"pson"			 									; Turns on the ATX power supply
 
 ; ====================== Network ===========================
 ; everything set is done throuh the RPI4
