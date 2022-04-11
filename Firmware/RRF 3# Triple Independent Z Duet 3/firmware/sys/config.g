@@ -8,14 +8,16 @@
 ; many features such as pressure advance and input shaping are now called in the starting print macros
 ; 
 ; ================= General preferences ===================
-; ======================= RRF3.3 ==========================
-M80															; Turns on the ATX power supply
-; ======================= RRF3.4 ==========================
-;M80 C"pson"												; Turns on the ATX power supply
 G4 S1														; Wait for tool board
-G90                                                			; send absolute coordinates...
-M83                                                			; ...but relative extruder moves
-M669 K1                                            			; select CoreXY mode
+G90                                                     	; send absolute coordinates...
+M83                                                     	; ...but relative extruder moves
+M669 K1														; Select CoreXY mode
+M550 P"BLV Cube"                                        	; set printer name
+
+; ======================= RRF3.3 ==========================
+;M80														  ; Turns on the ATX power supply
+; ======================= RRF3.4 ==========================
+M80 C"pson"			 									; Turns on the ATX power supply
 
 ; ====================== Network ===========================
 ; network settings are done through the RPI
