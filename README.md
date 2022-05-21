@@ -93,7 +93,6 @@ Required Hardware:
 ## Rear Stepper Timing Gear Jig  
 A jig I made to aid in timing geat placement. The spacing is 1.75mm  
 
-
 ## Metal Kit X Carriage Top Plate Wire Loom Holder    
 Top mount holder for the wire loom.    
 Required hardware to mount to the X Carriage top:  
