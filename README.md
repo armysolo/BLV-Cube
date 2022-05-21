@@ -111,6 +111,10 @@ Mounts an ADXL345 Accelerometer to the rear of the X carriage. 2 versions have b
 ** 3x M3x8 flat head screws  
 ** 2x M2.5x6mm socket head screws  
 
+## NF-Sunrise BLTouch Volcano Mount
+* Offset from hotend: X0 Y-31.    
+* I personally have not tested this mount, let me know of any issues.    
+
 ## Miscellaneous Goodies
 Ed Palisoc(Nuramori on Thingiverse) has been a huge contributer to out community. Without his help I wouldn't have been able to finish my Triple Z setup. He's been kind enough to share his designs. Here are links to his projects(more to come):  
 
