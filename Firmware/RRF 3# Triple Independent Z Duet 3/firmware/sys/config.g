@@ -15,9 +15,11 @@ M669 K1														; Select CoreXY mode
 M550 P"BLV Cube"                                        	; set printer name
 
 ; ======================= RRF3.3 ==========================
-;M80														  ; Turns on the ATX power supply
+;M80								; Turns on the ATX power supply
+;M575 P1 S1 B57600						; enable support for PanelDue
 ; ======================= RRF3.4 ==========================
-M80 C"pson"			 									; Turns on the ATX power supply
+M80 C"pson" 							; Turns on the ATX power supply
+M575 P1 S0 B57600						; enable support for PanelDue
 
 ; ====================== Network ===========================
 ; network settings are done through the RPI
@@ -92,8 +94,6 @@ G10 P0 X0 Y0 Z0 R0 S0                              			; set tool 0 axis offsets
 M564 H0                                   	   				; Let the Jog buttons work blv: added to allow jog buttons
 
 ; ====================== Miscellaneous =====================
-M575 P1 S1 B57600                                  			; enable support for PanelDue
-M575 P2 S1 B57600                                  			; enable support for BLV NeoPixels
 M911 S10 R11 P"M913 X0 Y0 G91 M83 G1 Z3 E-5 F1000" 			; set voltage thresholds and actions to run on power loss
 ;M574 S1 P"^!0.io7.in"               						; Define Emergency endstop - emergency stop switch condition
 M950 J1 C"0.io4.in"											; Create GPIO pin to control PSU power. Button wired NO(C > 0.io4.in, NO > GND)

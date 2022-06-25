@@ -19,9 +19,13 @@ M669 K1														; Select CoreXY mode
 G4 S1														  ; Wait for tool board
 
 ; ======================= RRF3.3 ==========================
-;M80														  ; Turns on the ATX power supply
+;M80								; Turns on the ATX power supply
+;M575 P1 S1 B57600						; enable support for PanelDue
+;M575 P2 S1 B57600						; enable support for BLV NeoPixel board
 ; ======================= RRF3.4 ==========================
-M80 C"pson"			 									; Turns on the ATX power supply
+M80 C"pson" 							; Turns on the ATX power supply
+M575 P1 S0 B57600						; enable support for PanelDue
+M575 P2 S0 B57600						; enable support for BLV NeoPixel board
 
 ; ====================== Network ===========================
 ; everything set is done throuh the RPI4
@@ -94,8 +98,6 @@ G10 P0 R0 S0                                       			; set initial tool 0 activ
 M564 H0                                   	            	; Let the Jog buttons work blv: added to allow jog buttons
 
 ; ====================== Miscellaneous =====================
-M575 P1 S1 B57600                                       	; enable support for PanelDue
-M575 P2 S1 B57600                                       	; enable support for BLV NeoPixel board
 M911 S10 R11 P"M913 X0 Y0 G91 M83 G1 Z3 E-5 F1000" 			; set voltage thresholds and actions to run on power loss
 M950 J1 C"!0.io3.in"										; Create GPIO pin for On button wired NO
 M581 T2 P1 S1 R0		                       				; T2-Run Trigger 2; P1-J1; S1-When button pressed; R0-trigger any time

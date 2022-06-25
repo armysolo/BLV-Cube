@@ -9,9 +9,11 @@ M83                                                     	; ...but relative extru
 M669 K1														                        ; Select CoreXY mode
 
 ; ======================= RRF3.3 ==========================
-;M80														                          ; Turns on the ATX power supply
+;M80								; Turns on the ATX power supply
+;M575 P1 S1 B57600						; enable support for PanelDue
 ; ======================= RRF3.4 ==========================
-M80 C"pson"			 								                        	; Turns on the ATX power supply
+M80 C"pson" 							; Turns on the ATX power supply
+M575 P1 S0 B57600						; enable support for PanelDue
 
 ; ====================== Network ===========================
 ;M550 P"BLV CUBE"                                   						; Set machine name-Now set through RPI
@@ -92,7 +94,6 @@ G10 P0 R0 S0                                       							; set initial tool 0 a
 M564 H0                                   	   								; Let the Jog buttons work blv: added to allow jog buttons
 
 ; ====================== Miscellaneous =====================
-M575 P1 S1 B57600                                  							; enable support for PanelDue
 M911 S10 R11 P"M913 X0 Y0 G91 M83 G1 Z3 E-5 F1000" 							; set voltage thresholds and actions to run on power loss
 
 ;out0 NC
